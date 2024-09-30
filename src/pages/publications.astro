@@ -1,5 +1,51 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
+import HorizontalCardPublication from "@components/HorizontalCardPublication.astro";
 ---
-<BaseLayout sideBarActiveItemID="publications">
+
+<BaseLayout title="Publications" sideBarActiveItemID="publications">
+    <div>
+        <div class="text-3xl w-full font-bold mb-5">Publications</div>
+        You can find my publication on <a class="underline" href="https://scholar.google.com/citations?user=X1_qLV4AAAAJ&hl=it">Google Scholar</a> or <a class="underline" href="https://www.semanticscholar.org/author/Michele-Papucci/3757153">Semantic Scholar</a>. However here's the complete publication list curated by me:
+    </div>
+    <HorizontalCardPublication
+        title="Label Selection in Text-to-Text Neural Language Models for Classification"
+        authors="Michele Papucci"
+        published_at="University of Pisa, Master's Thesis in Data Science and Business Informatics"
+        badge="Thesis"
+        year="2024"
+        abstract="This work contains a set of preliminary experiments with the objective of exploring and optimizing the use of reasonably small text-to-text Transformers to solve classification tasks. The broader objective is to see if we can use text-to-text Language Models, that aren’t costly to train and deploy like the ones that are currently very popular (e.g. Chat-GPT or LLaMa), as a unifying framework to solve any Natural Language Processing tasks. Contrary to what we need to do with larger models, with reasonably sized Transformers we need to find optimal way of casting the tasks into a text-to-text form, i.e. having a textual input, and expecting a textual output from the model. This thesis focuses on classification tasks, and in particular on the problem of how to represent class names into the best possible strings that maximize performances for the model. First, we evaluated whether this smaller models can obtain reasonable performances in classification tasks. Then, we tested the importance of label representation in this settings, finding that is, indeed, important to maximize the model performances. Finally, we presented and evaluated a novel technique to extract label representation from the training set of a classification task based on Attention attribution explainability methods."
+        url="/pdfs/tesi_magistrale.pdf"
+        tags={["Label Representation"]}
+    />
+    <HorizontalCardPublication
+        title="Lost in Labels: An Ongoing Quest to Optimize Text-to-Text Label Selection for Classification"
+        authors="Michele Papucci, Alessio Miaschi, Felice Dell'Orletta"
+        published_at="Proceedings of the Ninth Italian Conference on Computational Linguistics (CLiC-it 2023), Venezia."
+        abstract="In this paper, we present an evaluation of the influence of label selection on the performance of a Sequence-to-Sequence Transformer model in a classification task. Our study investigates whether the choice of words used to represent classification categories affects the model’s performance, and if there exists a relationship between the model’s performance and the selected words. To achieve this, we fine-tuned an Italian T5 model on topic classification using various labels. Our results indicate that the different label choices can significantly impact the model’s performance. That being said, we did not find a clear answer on how these choices affect the model performances, highlighting the need for further research in optimizing label selection."
+        badge="Proceedings"
+        year="2023"
+        url="https://ceur-ws.org/Vol-3596/paper39.pdf"
+        tags={["Label Representation"]}
+    />
+    <HorizontalCardPublication
+        title="Evaluating Text-To-Text Framework for Topic and Style Classification of Italian texts"
+        authors="Michele Papucci, Chiara De Nigris, Alessio Miaschi, Felice Dell'Orletta"
+        published_at="Proceedings of the 6th Work-shop on Natural Language for Artificial Intelligence (NL4AI 2022) co-located with 21th International Conference of the Italian Association for Artificial Intelligence (AI*IA 2022), Udine"
+        abstract="In this paper, we propose an extensive evaluation of the first text-to-text Italian Neural Language Model (NLM), IT5, on a classification scenario. In particular, we test the performance of IT5 on several tasks involving both the classification of the topic and the style of a set of Italian posts. We assess the model in two different configurations, single-and multi-task classification, and we compare it with a more traditional NLM based on the Transformer architecture (i.e. BERT). Moreover, we test its performance in a few-shot learning scenario. We also perform a qualitative investigation on the impact of label representations in modeling the classification of the IT5 model. Results show that IT5 could achieve good results, although generally lower than the BERT model. Nevertheless, we observe a significant performance improvement of the Text-to-text model in a multi-task classification scenario. Finally, we found that altering the representation of the labels mainly impacts the classification of the topic."
+        badge="Proceedings"
+        year="2022"
+        url="http://sag.art.uniroma2.it/NL4AI/wp-content/uploads/2022/11/paper8.pdf"
+        tags={["Label Representation"]}
+    />
+    <HorizontalCardPublication
+        title="L'Italiano Amministrativo dagli Atti al Web: una risorsa per la semplificazione automatica"
+        authors="Michele Papucci"
+        published_at="University of Pisa, Bachelor's Thesis in Informatica Umanistica (Digital Humanities)"
+        badge="Thesis"
+        year="2022"
+        url="/pdfs/tesi_triennale.pdf"
+        language="Italian"
+        tags={["Text Simplification"]}
+    />
 </BaseLayout>
