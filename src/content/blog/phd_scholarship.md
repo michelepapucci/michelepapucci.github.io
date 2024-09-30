@@ -3,7 +3,7 @@ title: "Won a PhD Scholarship at the University of Pisa"
 description: "After an oral examination and a credential's review I've won one of the two available Computer Science PhD scholarships at the University of Pisa."
 pubDate: "Jun 13 2024"
 heroImage: "/pictures/lungarni.jpg"
-tags: ["tokio"]
+tags: ["PhD"]
 ---
 
 After an oral examination and a credential's review I've won one of the two available Computer Science PhD scholarships at the University of Pisa.
