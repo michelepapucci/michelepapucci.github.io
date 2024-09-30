@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Michele Papucci</div>
+    <div class="text-3xl py-3 font-bold">PhD Student in Natural Language Processing</div>
+    <div class="py-2">
+      <text class="text-lg">
+        I am a <b>PhD Student</b> in Computer Science founded by the University of Pisa. I work at the
+        Computational Linguistics Institute of the Italian National Research Center in Pisa. My work focuses on 
+        Natural Language Processing and, in particular, on <b>Controllable Text Generation</b> and <b>Hallucination detection and prevention</b>. 
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn bg-primary font-semibold" href="https://x.com/michelepapucci_" target="_blank"> Follow Me on Twitter!</a>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+</BaseLayout>
