@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /explore-patriagis/
 
-Sitemap: https://astrofy-template.netlify.app/sitemap-index.xml
+Sitemap: https://michelepapucci.github.io/sitemap-index.xml
