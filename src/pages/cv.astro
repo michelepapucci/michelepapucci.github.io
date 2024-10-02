@@ -10,16 +10,19 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="mb-10 text-justify">
     <p>
-    I started my journey at a technical High School learning <b
-      >Computer Science</b
-    >. From there, I've always tried to both work and study to have a better
-    prospective on realistic application of the subjects I've studied. I
-    finished my Bachelor's and Master's in time while working full time jobs,
-    and then decided to leave my last job to focus on my PhD. <br />
-    I've worked mostly as a <b>Full-Stack Developer</b> during my Bachelor's years
-    and then during my Master's I've moved onto Data Science job focusing on <b
-      >Natural Language Processing</b>. <br/>
-    You can find my complete publication list <b><a class="underline" href="/publications">here</a></b>.
+      I started my journey at a technical High School learning <b
+        >Computer Science</b
+      >. From there, I've always tried to both work and study to have a better
+      prospective on realistic application of the subjects I've studied. I
+      finished my Bachelor's and Master's in time while working full time jobs,
+      and then decided to leave my last job to focus on my PhD. <br />
+      I've worked mostly as a <b>Full-Stack Developer</b> during my Bachelor's years
+      and then during my Master's I've moved onto Data Science job focusing on <b
+        >Natural Language Processing</b
+      >. <br />
+      You can find my complete publication list <b
+        ><a class="underline" href="/publications">here</a></b
+      >.
     </p>
   </div>
 
@@ -53,25 +56,34 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <div class="text-3xl w-full font-bold">Work Experience</div>
   </div>
   <TimeLineElement
-      title="Natural Language Processing Data Scientis"
-      subtitle="From 2022 to 2024 at Talia S.R.L., Pisa, Italy"
-      tech="Python, Django, Celery, Redis, Postgres, PyTorch, Scikit-Learn, Scipy, Numpy, Pandas, Git"
-    >
-    I’ve worked on the development of Natural Language Processing tools based on both traditional
-    and Deep Neural Network architecture served as API in a Business-to-Business setting. In
-    particular, I’ve been directly responsible for the re-writing and upgrading of a NLP Pipeline from Python 2 to Python 3 (sentence splitter, tokenizer, PoS-Tagger, Dependecy Parser).
-    I've developed efficient NLP tools based on the linguistic pipeline and contextual and non-contextual word-embeddings (NER, Sentiment and Topic Classifier, Readability Measurer). 
-    Then, these services have been serviced through an web API interface for business-to-business applications.
-    </TimeLineElement>
+    title="Natural Language Processing Data Scientis"
+    subtitle="From 2022 to 2024 at Talia S.R.L., Pisa, Italy"
+    tech="Python, Django, Celery, Redis, Postgres, PyTorch, Scikit-Learn, Scipy, Numpy, Pandas, Git"
+  >
+    I’ve worked on the development of Natural Language Processing tools based on
+    both traditional and Deep Neural Network architecture served as API in a
+    Business-to-Business setting. In particular, I’ve been directly responsible
+    for the re-writing and upgrading of a NLP Pipeline from Python 2 to Python 3
+    (sentence splitter, tokenizer, PoS-Tagger, Dependecy Parser). I've developed
+    efficient NLP tools based on the linguistic pipeline and contextual and
+    non-contextual word-embeddings (NER, Sentiment and Topic Classifier,
+    Readability Measurer). Then, these services have been serviced through an
+    web API interface for business-to-business applications.
+  </TimeLineElement>
   <div class="time-line-container mb-10">
     <TimeLineElement
       title="Natural Language Processing Services Developer"
       subtitle='Two months in 2022 at the Computational Linguistics Institute "A. Zampolli", Italian National Research Council (CNR), Pisa, Italy'
       tech="Python, Django, Celery, PHP, Laravel, Tailwind, JavaScript, unittest, PyTorch, Scikit-Learn, Git"
     >
-      I've worked at a Project titled "2022/1698, Ottimizzazione di interfacce API a strumenti di analisi linguistica sviluppati
-      dall’Italian Natural Language Processing Lab (ItaliaNLP Lab)" where I've worked on the creation of an end-to-end test suite, to validate the functionalities of a Linguistic Analysis service served through web API.
-      Then, I developed a demo website showcasing the API functionalities and did a comparative study between the in-house Linguistic Analysis API and the state-of-the-art libraries available at that time. 
+      I've worked at a Project titled "2022/1698, Ottimizzazione di interfacce
+      API a strumenti di analisi linguistica sviluppati dall’Italian Natural
+      Language Processing Lab (ItaliaNLP Lab)" where I've worked on the creation
+      of an end-to-end test suite, to validate the functionalities of a
+      Linguistic Analysis service served through web API. Then, I developed a
+      demo website showcasing the API functionalities and did a comparative
+      study between the in-house Linguistic Analysis API and the
+      state-of-the-art libraries available at that time.
     </TimeLineElement>
     <TimeLineElement
       title="Full Stack Web Developer"
@@ -112,39 +124,74 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     </TimeLineElement>
   </div>
 
-  <!---
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-3xl w-full font-bold">Conference Presentations</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li class="text-accent">
+      <span class="text-primary-content">
+        <b>9th Italian Conference on Computational Linguistics (CLiC-it 2023)</b
+        >, 2023, Venezia. Oral Presentation in the track "Large Language Models:
+        Applications";
+      </span>
+    </li>
+    <li class="text-accent">
+      <span class="text-primary-content">
+        <b
+          >6th Workshop on Natural Language for Artificial Intelligence (NL4AI
+          2022)</b
+        >, co-located with the 21st International Conference of the Italian
+        Association for Artifical Intelligence (AI*IA 2022), 2022, Udine. Oral
+        Presentation;
+      </span>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">
+      Partecipations in Research Schools and Workshops
+    </div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li class="text-accent">
+      <span class="text-primary-content">
+        <b>Lectures on Computational Linguistics 2023 </b>, May 29-31 2023,
+        University of Pisa, Pisa;
+      </span>
+    </li>
+    <li class="text-accent">
+      <span class="text-primary-content">
+        <b>Lectures on Computational Linguistics 2022 </b>, June 8-10 2022,
+        Università degli Studi di Napoli "L'Orientale", Napoli;
+      </span>
+    </li>
+    <li class="text-accent">
+      <span class="text-primary-content">
+        <b>PyCon Italia 2022</b>, June 2-5 2022, Grand Hotel Mediterraneo,
+        Firenze;
+      </span>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications and Awards</div>
   </div>
   <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+    <li class="text-accent">
+      <a
+        href="https://zerorobotics.mit.edu/tournaments/16/info/90/0/"
+        target="_blank"
+        class="text-primary-content"
+      >
+        <b class="underline">Zero Robotics 2014</b>: Member of the ISS Finalist
+        Team "Sunspots Narwhals Eagles", European Space Research and Technology Centre (ESTEC), Noordwijk, Netherlands;</a
+      >
     </li>
   </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
-  -->
+  <div class="divider my-0"></div>
 </BaseLayout>
+
+<!-- class="list-disc md:columns-5 columns-2 mx-6" -->
