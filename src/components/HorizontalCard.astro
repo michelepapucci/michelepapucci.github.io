@@ -1,5 +1,5 @@
 ---
-const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
+const { title, alt, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 ---
@@ -16,7 +16,7 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
             width={750}
             height={422}
             format="webp"
-            alt={title}
+            alt={alt ?? title}
             class="max-w-full md:max-w-[13rem] rounded-lg"
           />
         )
@@ -31,7 +31,7 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
           {
             tags &&
               tags.map((tag) => (
-                <a href={`${tag_url}/${tag}`} class="badge badge-outline">
+                <a href={`${tag_url}/${tag}`} class="badge badge-primary">
                   {tag}
                 </a>
               ))
