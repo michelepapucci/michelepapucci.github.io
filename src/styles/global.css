@@ -2,10 +2,11 @@
     display: none;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     background: oklch(var(--a));
-  }
-  
-  ::selection {
+}
+
+::selection {
     background: oklch(var(--a));
-  }
+}
