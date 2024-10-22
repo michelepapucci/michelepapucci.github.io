@@ -43,5 +43,6 @@ import { Image } from "astro:assets";
       </div>
     </div>
   </div>
-  <a href={url} target={target} class="btn mr-3 mb-4 bg-primary">Check it Out!</a>
+  {url ? <a href={url} target={target} class="btn mr-3 mb-4 bg-primary">Check it Out!</a> : <a href={url} target={target} class="btn mr-3 mb-4 bg-primary" disabled>Available Soon!</a>}
+  
 </div>
