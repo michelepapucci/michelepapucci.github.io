@@ -4,6 +4,7 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
 ---
 
 <BaseLayout title="Publications" sideBarActiveItemID="publications">
+    
     <div>
         <div class="text-3xl w-full font-bold mb-5">Publications</div>
         You can find my publication on <a class="underline" href="https://scholar.google.com/citations?user=X1_qLV4AAAAJ&hl=it">Google Scholar</a> or <a class="underline" href="https://www.semanticscholar.org/author/Michele-Papucci/3757153">Semantic Scholar</a>. However here's the complete publication list curated by me:
@@ -15,6 +16,8 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         abstract="Generative language models, particularly adopting text-to-text frameworks, have shown significant success in NLP tasks. While much research has focused on input representations via prompting techniques, less attention has been given to optimizing output representations. Previous studies found inconsistent effects of label representations on model performance in classification tasks using these models. In this work, we introduce a novel method for selecting well-performing label representations by leveraging the attention mechanisms of Transformer models. We used an Italian T5 model fine-tuned on a topic classification task, trained on posts extracted from online forums and categorized into 11 classes, to evaluate different label representation selection strategies. We’ve employed a context-mixing score called Value Zeroing to assess each token’s impact to select possible representations from the training set. Our results include a detailed qualitative analysis to identify which label choices most significantly affect classification outcomes, suggesting that using our approach to select label representations can enhance performance."
         badge="Proceedings"
         year="2024"
+        bibtex = "Still to be published"
+        bibtex_id = fantastic_labels
         tags={["Preview", "Label Representation"]}
     />
     <HorizontalCardPublication
@@ -25,6 +28,14 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         year="2024"
         abstract="This work contains a set of preliminary experiments with the objective of exploring and optimizing the use of reasonably small text-to-text Transformers to solve classification tasks. The broader objective is to see if we can use text-to-text Language Models, that aren’t costly to train and deploy like the ones that are currently very popular (e.g. Chat-GPT or LLaMa), as a unifying framework to solve any Natural Language Processing tasks. Contrary to what we need to do with larger models, with reasonably sized Transformers we need to find optimal way of casting the tasks into a text-to-text form, i.e. having a textual input, and expecting a textual output from the model. This thesis focuses on classification tasks, and in particular on the problem of how to represent class names into the best possible strings that maximize performances for the model. First, we evaluated whether this smaller models can obtain reasonable performances in classification tasks. Then, we tested the importance of label representation in this settings, finding that is, indeed, important to maximize the model performances. Finally, we presented and evaluated a novel technique to extract label representation from the training set of a classification task based on Attention attribution explainability methods."
         url="/pdfs/tesi_magistrale.pdf"
+        bibtex={`@mastersthesis{
+            papucci2024thesis,
+            title={Label Selection in Text-to-Text Neural Language Models for Classification},
+            author={Papucci, Michele},
+            school={University of Pisa},
+            year={2024}
+          }`}
+        bibtex_id = master_thesis
         tags={["Label Representation"]}
     />
     <HorizontalCardPublication
@@ -35,6 +46,17 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         badge="Proceedings"
         year="2023"
         url="https://ceur-ws.org/Vol-3596/paper39.pdf"
+        bibtex_id="lost_in_labels"
+        bibtex={`@inproceedings{papucci2024lost,
+                title={Lost in Labels: An Ongoing Quest to Optimize Text-to-Text Label Selection for Classification},
+                author={Papucci, Michele and Miaschi, Alessio and Dell’Orletta, Felice},
+                booktitle={Proceedings of the 9th Italian Conference on Computational Linguistics CLiC-it 2023: Venice, Italy, November 30-December 2, 2023},
+                volume={516},
+                number={394},
+                pages={343},
+                year={2024},
+                organization={Accademia University Press}
+                }`}
         tags={["Label Representation"]}
     />
     <HorizontalCardPublication
@@ -45,6 +67,15 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         badge="Proceedings"
         year="2022"
         url="http://sag.art.uniroma2.it/NL4AI/wp-content/uploads/2022/11/paper8.pdf"
+        bibtex={`@inproceedings{
+            papucci2022evaluating,
+            title={Evaluating Text-To-Text Framework for Topic and Style Classification of Italian texts.},
+            author={Papucci, Michele and De Nigris, Chiara and Miaschi, Alessio and Dell'Orletta, Felice},
+            booktitle={NL4AI@ AI* IA},
+            pages={56--70},
+            year={2022}
+          }`}
+        bibtex_id="evaluating_text_to_text"
         tags={["Label Representation"]}
     />
     <HorizontalCardPublication
@@ -55,6 +86,15 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         year="2022"
         url="/pdfs/tesi_triennale.pdf"
         language="Italian"
+        bibtex={`@mastersthesis{
+            papucci2024thesis,
+            title={L'Italiano Amministrativo dagli Atti al Web: una risorsa per la semplificazione automatica},
+            author={Papucci, Michele},
+            school={University of Pisa},
+            year={2022}
+            type="Bachelor Thesis"
+          }`}
+        bibtex_id = bachelor_thesis
         tags={["Text Simplification"]}
     />
     <div class="divider my-0" />

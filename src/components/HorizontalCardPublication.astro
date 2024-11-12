@@ -1,6 +1,8 @@
 ---
-const { title, img, abstract, authors, published_at, url, badge, tags, year, language, target = "_blank" } = Astro.props;
+const { title, img, abstract, authors, published_at, url, badge, tags, year, bibtex, bibtex_id, language, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
+import Modal from '../components/Modal.astro';
+
 //const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 // {`${tag_url}/${tag}`} <a> instead of <span>
 ---
@@ -44,5 +46,5 @@ import { Image } from "astro:assets";
     </div>
   </div>
   {url ? <a href={url} target={target} class="btn mr-3 mb-4 bg-primary">Check it Out!</a> : <a href={url} target={target} class="btn mr-3 mb-4 bg-primary" disabled>Available Soon!</a>}
-  
+  <Modal id={bibtex_id} title={title} print_bibtex={bibtex}/>
 </div>
