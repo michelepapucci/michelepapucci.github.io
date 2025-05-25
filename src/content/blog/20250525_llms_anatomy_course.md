@@ -13,4 +13,4 @@ Tomorrow, 26th of May 2025, a course for the Engineering Department of the Unive
 - 16th of July - Lecture 5: Interpretability and Analysis of Transformers + Laboratory;
 - 18th of July - Lecture 6: Interpretability and Explainability for Transformers + Laboratory;
 
-The repository with slides and code it’s available on my GitHub and will be updated during the course!
+The repository with slides and code it’s available on [my GitHub](https://github.com/michelepapucci/llms-anatomy-course) and will be updated during the course!
