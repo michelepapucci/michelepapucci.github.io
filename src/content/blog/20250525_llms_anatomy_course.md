@@ -1,5 +1,5 @@
 ---
-title: "I am helding a course!"
+title: "I am holding a course!"
 description: "LLMs Anatomy Course for the Engineering Department of the University of Pisa"
 pubDate: "May 25 2025"
 tags: ["PhD"]
