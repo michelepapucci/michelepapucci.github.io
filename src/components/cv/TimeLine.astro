@@ -1,5 +1,5 @@
 ---
-const { title, subtitle, grade, tech} = Astro.props;
+const { title, subtitle, grade, tech, badge, badge_link} = Astro.props;
 ---
 
 <div class="flex">
@@ -29,6 +29,15 @@ const { title, subtitle, grade, tech} = Astro.props;
             <b>Main Technologies:</b> {tech}
           </span>
         )
+      }
+      {
+        badge && (
+        <p class="my-1 text-justify">
+          </p>
+        <a class="badge badge-secondary mx-2 ml-0 my-1" href={badge_link}>
+            {badge}
+        </a>
+      )
       }
       <p class="my-2 text-justify max-w-prose pb-1">
         <slot />

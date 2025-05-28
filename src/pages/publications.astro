@@ -10,6 +10,17 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         You can find my publication on <a class="underline" href="https://scholar.google.com/citations?user=X1_qLV4AAAAJ&hl=it">Google Scholar</a> or <a class="underline" href="https://www.semanticscholar.org/author/Michele-Papucci/3757153">Semantic Scholar</a>. However here's the complete publication list curated by me:
     </div>
     <HorizontalCardPublication
+        title="Stress-testing Machine Generated Text Detection: Shifting Language Models Writing Style to Fool Detectors"
+        authors="Andrea Pedrotti, Michele Papucci, Cristiano Ciaccio, Alessio Miaschi, Giovanni Puccetti, Felice Dell'Orletta, Andrea Esuli"
+        published_at="Accepted at Findings of the Association for Computational Linguistics: ACL 2025, Vienna, Austria."
+        abstract="Recent advancements in Generative AI and Large Language Models (LLMs) have enabled the creation of highly realistic synthetic content, raising concerns about the potential for malicious use, such as misinformation and manipulation. Moreover, detecting Machine-Generated Text (MGT) remains challenging due to the lack of robust benchmarks that assess generalization to real-world scenarios. In this work, we present a pipeline to test the resilience of state-of-the-art MGT detectors (e.g., Mage, Radar, LLM-DetectAIve) to linguistically informed adversarial attacks. To challenge the detectors, we fine-tune language models using Direct Preference Optimization (DPO) to shift the MGT style toward human-written text (HWT). This exploits the detectors’ reliance on stylistic clues, making new generations more challenging to detect. Additionally, we analyze the linguistic shifts induced by the alignment and which features are used by detectors to de tect MGT texts. Our results show that detectors can be easily fooled with relatively few examples, resulting in a significant drop in detection performance. This highlights the importance of improving detection methods and making them robust to unseen in-domain texts. We release code, models, and data to support fu ture research on more robust MGT detection benchmarks."
+        badge="Proceedings"
+        year="2025"
+        bibtex = "Still to be published"
+        bibtex_id = stress_testing_mgt
+        tags={["Machine Generated Text Detection", "Controllable Text Generation"]}
+    />
+    <HorizontalCardPublication
         title="Fantastic Labels and Where to Find Them: Attention-Based Label Selection for Text-to-Text Classification"
         authors="Michele Papucci, Alessio Miaschi, Felice Dell'Orletta"
         published_at="Proceedings of the 8th Work-shop on Natural Language for Artificial Intelligence (NL4AI 2024) co-located with 23th International Conference of the Italian Association for Artificial Intelligence (AI*IA 2024), Bolzano."
