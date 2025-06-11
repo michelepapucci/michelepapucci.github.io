@@ -3,7 +3,7 @@ title: "I am holding a NLP course!"
 description: "LLMs Anatomy Course for the Engineering Department of the University of Pisa"
 pubDate: "May 25 2025"
 heroImage: "/pictures/random_ai_image.jpeg"
-tags: ["PhD"]
+tags: ["Teaching"]
 ---
 
 Tomorrow, 26th of May 2025, a course for the Engineering Department of the University of Pisa will start, and I am lucky to be part of it. Together with friend and colleague [Alessio Miaschi](https://alemiaschi.github.io/) from the ItaliaNLP Lab of the Computational Linguistics Institute of the CNR, we will hold a course about using Transformers. The calendar of the course is the following:
