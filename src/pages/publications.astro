@@ -16,7 +16,7 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         abstract="Recent advancements in Generative AI and Large Language Models (LLMs) have enabled the creation of highly realistic synthetic content, raising concerns about the potential for malicious use, such as misinformation and manipulation. Moreover, detecting Machine-Generated Text (MGT) remains challenging due to the lack of robust benchmarks that assess generalization to real-world scenarios. In this work, we present a pipeline to test the resilience of state-of-the-art MGT detectors (e.g., Mage, Radar, LLM-DetectAIve) to linguistically informed adversarial attacks. To challenge the detectors, we fine-tune language models using Direct Preference Optimization (DPO) to shift the MGT style toward human-written text (HWT). This exploits the detectors’ reliance on stylistic clues, making new generations more challenging to detect. Additionally, we analyze the linguistic shifts induced by the alignment and which features are used by detectors to de tect MGT texts. Our results show that detectors can be easily fooled with relatively few examples, resulting in a significant drop in detection performance. This highlights the importance of improving detection methods and making them robust to unseen in-domain texts. We release code, models, and data to support fu ture research on more robust MGT detection benchmarks."
         badge="Proceedings"
         year="2025"
-        bibtex = `@misc{pedrotti2025stresstestingmachinegeneratedtext,
+        bibtex={`@misc{pedrotti2025stresstestingmachinegeneratedtext,
                     title={Stress-testing Machine Generated Text Detection: Shifting Language Models Writing Style to Fool Detectors}, 
                     author={Andrea Pedrotti and Michele Papucci and Cristiano Ciaccio and Alessio Miaschi and Giovanni Puccetti and Felice Dell'Orletta and Andrea Esuli},
                     year={2025},
@@ -24,7 +24,7 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
                     archivePrefix={arXiv},
                     primaryClass={cs.CL},
                     url={https://arxiv.org/abs/2505.24523}, 
-                }`
+                }`}
         bibtex_id = stress_testing_mgt
         url="https://arxiv.org/abs/2505.24523"
         code_url="https://github.com/gpucce/control_mgt"
@@ -37,7 +37,6 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         abstract="Generative language models, particularly adopting text-to-text frameworks, have shown significant success in NLP tasks. While much research has focused on input representations via prompting techniques, less attention has been given to optimizing output representations. Previous studies found inconsistent effects of label representations on model performance in classification tasks using these models. In this work, we introduce a novel method for selecting well-performing label representations by leveraging the attention mechanisms of Transformer models. We used an Italian T5 model fine-tuned on a topic classification task, trained on posts extracted from online forums and categorized into 11 classes, to evaluate different label representation selection strategies. We’ve employed a context-mixing score called Value Zeroing to assess each token’s impact to select possible representations from the training set. Our results include a detailed qualitative analysis to identify which label choices most significantly affect classification outcomes, suggesting that using our approach to select label representations can enhance performance."
         badge="Proceedings"
         year="2024"
-        bibtex = "Still to be published"
         bibtex_id = fantastic_labels
         url="/pdfs/fantastic_labels.pdf"
         code_url="https://github.com/michelepapucci/fantastic-labels"
