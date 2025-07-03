@@ -1,4 +1,5 @@
-Sitemap: https://michelepapucci.github.io/sitemap-index.xml
-Sitemap: https://michelepapucci.github.io/sitemap-0.xml
-User-agent: *
-Disallow: /explore-patriagis/
+Sitemap: https://michelepapucci.github.io/sitemap-index.xml  
+Sitemap: https://michelepapucci.github.io/sitemap-0.xml  
+
+User-agent: *  
+Disallow: /explore-patriagis/  
