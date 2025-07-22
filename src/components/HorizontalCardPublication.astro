@@ -1,5 +1,5 @@
 ---
-const { title, img, abstract, authors, published_at, url, badge, tags, year, bibtex, bibtex_id, language, code_url, target = "_blank" } = Astro.props;
+const { title, img, abstract, authors, published_at, url, badge, tags, year, bibtex, bibtex_id, language, code_url, code_text = "Code Available", target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
 import Modal from '../components/Modal.astro';
 
@@ -47,6 +47,6 @@ import Modal from '../components/Modal.astro';
   </div>
   {url ? <a href={url} target={target} class="btn mr-3 mb-4 bg-primary">Check it Out!</a> : <a href={url} target={target} class="btn mr-3 mb-4 bg-primary" disabled>Available Soon!</a>}
   <Modal id={bibtex_id} title={title} print_bibtex={bibtex}/>
-  {code_url  && <a href={code_url} target={target} class="btn mr-3 mb-4 bg-tertiary">Code Available</a>}
+  {code_url  && <a href={code_url} target={target} class="btn mr-3 mb-4 bg-tertiary"> {code_text}</a>}
 
 </div>
