@@ -2,7 +2,7 @@
 title: "Partecipation at the Lipari Summer School on Computational Complex and Social Systems"
 description: "From 20/07 to 26/07 I have been to Lipari Summer School on Computational Complex and Social Systems. It focused on E-Health: Models, Algorithms, Platforms and Ethics"
 pubDate: "July 26 2025"
-heroImage: "/pictures/fotogruppolipari.png"
+heroImage: "/pictures/fotogruppolipari-min.png"
 tags: ["PhD"]
 ---
 
