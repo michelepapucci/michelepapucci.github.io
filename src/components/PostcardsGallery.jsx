@@ -48,63 +48,74 @@ export default function PostcardGallery() {
       {selected && (
         <div
             className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
-            onClick={() => setSelected(null)} // closes when clicking the overlay
+            onClick={() => setSelected(null)}
         >
             <div
-            className="bg-base-200 rounded-xl p-6 w-[90vw] max-w-[1200px] flex gap-8 relative"
-            onClick={(e) => e.stopPropagation()} // prevents closing when clicking inside the modal
+            className="bg-base-200 rounded-xl p-4 sm:p-6 w-[95vw] max-w-[1200px] flex flex-col sm:flex-row gap-6 sm:gap-8 relative items-center"
+            onClick={(e) => e.stopPropagation()}
             >
             <button
-              className="absolute top-2 right-2 text-black hover:text-red-500"
-              onClick={() => setSelected(null)}
+                className="absolute top-2 right-2 text-black hover:text-red-500"
+                onClick={() => setSelected(null)}
             >
-              ✕
+                ✕
             </button>
 
-            <div className="w-[100%] max-w-[1280px] perspective">
-            <div
-                className={`relative w-full transition-transform duration-700 transform-style-preserve-3d ${
+            {/* Image and Flip Button Block */}
+            <div className="flex flex-col items-center w-full sm:w-1/2">
+                <div className="w-full perspective flex justify-center">
+                <div
+                    className={`relative transition-transform duration-700 transform-style-preserve-3d ${
                     flipped ? 'rotate-y-180' : ''
-                }`}
-                style={{ maxHeight: '80vh', maxWidth: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-            >
-                {/* Front of card */}
-                <img
-                src={selected.front}
-                alt="Postcard front"
-                className="max-h-[80vh] w-auto h-auto object-contain rounded-xl shadow-md"
-                style={{ transform: 'rotateY(0deg)' }}
-                />
+                    }`}
+                    style={{
+                    maxHeight: '60vh',
+                    width: '100%',
+                    maxWidth: '100%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    }}
+                >
+                    {/* Front */}
+                    <img
+                    src={selected.front}
+                    alt="Postcard front"
+                    className="max-h-[60vh] w-auto object-contain rounded-xl shadow-md"
+                    style={{ transform: 'rotateY(0deg)' }}
+                    />
 
-                {/* Back of card */}
-                <img
-                src={selected.back}
-                alt="Postcard back"
-                className="absolute w-full h-full object-cover backface-hidden rounded-xl shadow-md"
-                style={{ transform: 'rotateY(180deg)' }}
-                />
-            </div>
+                    {/* Back */}
+                    <img
+                    src={selected.back}
+                    alt="Postcard back"
+                    className="absolute w-full h-full object-contain backface-hidden rounded-xl shadow-md"
+                    style={{ transform: 'rotateY(180deg)' }}
+                    />
+                </div>
+                </div>
 
-            <button
-                className="mt-2 text-2xl hover:rotate-90 transition-transform duration-300"
+                {/* Flip Button */}
+                <button
+                className="mt-4 text-2xl hover:rotate-90 transition-transform duration-300"
                 onClick={() => setFlipped(!flipped)}
                 title={flipped ? 'Show Front' : 'Show Back'}
                 >
                 🔄
-            </button>
+                </button>
             </div>
 
-            <div className="w-1/2">
-              <h2 className="text-xl font-bold mb-2">{selected.title}</h2>
-              <p className="text-gray-700 whitespace-pre-line">
-                {flipped
-                  ? selected.backDescription
-                  : selected.frontDescription}
-              </p>
+            {/* Description Block */}
+            <div className="w-full sm:w-1/2 text-center sm:text-left">
+                <h2 className="text-xl font-bold mb-2">{selected.title}</h2>
+                <p className="text-gray-700 whitespace-pre-line">
+                {flipped ? selected.backDescription : selected.frontDescription}
+                </p>
             </div>
-          </div>
+            </div>
         </div>
-      )}
+        )}
+
 
       <style>{`
         .perspective {
