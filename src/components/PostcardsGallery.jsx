@@ -1,6 +1,14 @@
 import { useState } from 'react';
 
 const postcards = [
+{
+    id: 2,
+    title: 'ACL Vienna 2025',
+    front: '/pictures/postcards/vienna2025_front.jpg',
+    back: 'pictures/postcards/vienna2025_back.png',
+    frontDescription: 'This postcard was sent from ACL in Vienna 2025. For now, this is a placeholder image shot before sending the postcard trough mail. When the original will arrive I\'ll update the photos.',
+    backDescription: 'This postcard was sent from ACL in Vienna 2025. For now, this is a placeholder image shot before sending the postcard trough mail. When the original will arrive I\'ll update the photos.'
+  },
   {
     id: 1,
     title: 'Lipari Summer School July 2025',
@@ -9,14 +17,7 @@ const postcards = [
     frontDescription: 'Sent from Lipari, during my Lipari Summer School in July 2025.\n On the lower part it says "Lipari\'s Castle - Eolie Islands".',
     backDescription: 'The message reads: "Greetings from Lipari, Summer School Lipari 2025. From Michele Papucci". Address redacted for privacy. \nThe stamp shows Lecce\s Theather and was issued in Rome 2024.'
   },
-  {
-    id: 2,
-    title: 'Test with Random Photos',
-    front: '/pictures/acl2025_poster.jpeg',
-    back: '/pictures/acl2025_table.png',
-    frontDescription: 'Lorem ipsum dolor sit amet.',
-    backDescription: 'Lorem ipsum dolor sit amet, 2025.'
-  },
+
   // Add more postcards here
 ];
 
