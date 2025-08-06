@@ -8,5 +8,15 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://michelepapucci.github.io",
-  integrations: [mdx(), sitemap(), tailwind(), react()]
+  integrations: [mdx(), sitemap(), tailwind(), react()],
+  vite: {
+    resolve: {
+      alias: {
+        '@layouts': path.resolve('./src/layouts'),
+        '@components': path.resolve('./src/components'),
+        '@pages': path.resolve('./src/pages'),
+        // Add more if needed
+      },
+    },
+  },
 });
