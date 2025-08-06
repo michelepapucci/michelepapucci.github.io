@@ -51,7 +51,7 @@ export default function PostcardGallery() {
             onClick={() => setSelected(null)}
         >
             <div
-            className="bg-base-200 rounded-xl p-4 sm:p-6 w-[95vw] max-w-[1200px] flex flex-col sm:flex-row gap-6 sm:gap-8 relative items-center"
+            className="bg-base-200 rounded-xl p-4 sm:p-6 w-[95vw] max-w-[1200px] flex flex-col sm:flex-row gap-6 sm:gap-8 relative items-start"
             onClick={(e) => e.stopPropagation()}
             >
             <button
@@ -106,7 +106,7 @@ export default function PostcardGallery() {
             </div>
 
             {/* Description Block */}
-            <div className="w-full sm:w-1/2 text-center sm:text-left">
+            <div className="w-full sm:w-1/2 text-justify">
                 <h2 className="text-xl font-bold mb-2">{selected.title}</h2>
                 <p className="text-gray-700 whitespace-pre-line">
                 {flipped ? selected.backDescription : selected.frontDescription}
