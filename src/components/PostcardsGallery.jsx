@@ -5,7 +5,7 @@ const postcards = [
     id: 2,
     title: 'ACL Vienna 2025',
     front: '/pictures/postcards/vienna2025_front.jpg',
-    back: 'pictures/postcards/vienna2025_back.png',
+    back: '/pictures/postcards/vienna2025_back.png',
     frontDescription: 'This postcard was sent from ACL in Vienna 2025. For now, this is a placeholder image shot before sending the postcard trough mail. When the original will arrive I\'ll update the photos.',
     backDescription: 'This postcard was sent from ACL in Vienna 2025. For now, this is a placeholder image shot before sending the postcard trough mail. When the original will arrive I\'ll update the photos.'
   },
@@ -64,47 +64,41 @@ export default function PostcardGallery() {
 
             {/* Image and Flip Button Block */}
             <div className="flex flex-col items-center w-full sm:w-1/2">
-                <div className="w-full perspective flex justify-center">
+              <div className="w-full perspective flex justify-center">
                 <div
-                    className={`relative transition-transform duration-700 transform-style-preserve-3d ${
-                    flipped ? 'rotate-y-180' : ''
-                    }`}
-                    style={{
-                    maxHeight: '60vh',
-                    width: '100%',
-                    maxWidth: '100%',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    }}
+                  className={`relative card-3d ${flipped ? 'rotate-y-180' : ''}`}
+                  style={{ maxHeight: '60vh', width: '100%' }}
                 >
-                    {/* Front */}
+                  {/* Front */}
+                  <div className="card-face">
                     <img
-                    src={selected.front}
-                    alt="Postcard front"
-                    className="max-h-[60vh] w-auto object-contain rounded-xl shadow-md"
-                    style={{ transform: 'rotateY(0deg)' }}
+                      src={selected.front}
+                      alt="Postcard front"
+                      className="w-full h-full object-contain rounded-xl"
                     />
+                  </div>
 
-                    {/* Back */}
+                  {/* Back */}
+                  <div className="card-face card-back">
                     <img
-                    src={selected.back}
-                    alt="Postcard back"
-                    className="absolute w-full h-full object-contain backface-hidden rounded-xl shadow-md"
-                    style={{ transform: 'rotateY(180deg)' }}
+                      src={selected.back}
+                      alt="Postcard back"
+                      className="w-full h-full object-contain rounded-xl"
                     />
+                  </div>
                 </div>
-                </div>
+              </div>
 
-                {/* Flip Button */}
-                <button
+              {/* Flip Button */}
+              <button
                 className="mt-4 text-2xl hover:rotate-90 transition-transform duration-300"
                 onClick={() => setFlipped(!flipped)}
                 title={flipped ? 'Show Front' : 'Show Back'}
-                >
+              >
                 🔄
-                </button>
+              </button>
             </div>
+
 
             {/* Description Block */}
             <div className="w-full sm:w-1/2 text-justify">
@@ -120,20 +114,37 @@ export default function PostcardGallery() {
 
       <style>{`
         .perspective {
-            perspective: 1000px;
+          perspective: 1000px;
         }
 
-        .transform-style-preserve-3d {
-            transform-style: preserve-3d;
+        /* the 3D container */
+        .card-3d {
+          transform-style: preserve-3d;
+          transition: transform 700ms;
+          position: relative;
+          height: 60vh;        /* matches your max height */
+        }
+
+        /* a single face */
+        .card-face {
+          position: absolute;
+          inset: 0;
+          backface-visibility: hidden; /* ✅ hide when flipped away */
+          -webkit-backface-visibility: hidden; /* Safari */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        /* the back face */
+        .card-back {
+          transform: rotateY(180deg);
         }
 
         .rotate-y-180 {
-            transform: rotateY(180deg);
+          transform: rotateY(180deg);
         }
-
-        .backface-hidden {
-            backface-visibility: hidden;
-        }
+        
       `}</style>
     </>
   );
