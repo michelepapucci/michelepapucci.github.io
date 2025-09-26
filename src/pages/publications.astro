@@ -12,15 +12,21 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
     <HorizontalCardPublication
         title="Generating and Evaluating Multi-Level Text Simplification: A Case Study on Italian"
         authors="Michele Papucci, Giulia Venturi, Felice Dell'Orletta"
-        published_at="Accepted at Proceedings of the Eleventh Italian Conference on Computational Linguistics (CLiC-it 2025), Cagliari."
+        published_at="Proceedings of the Eleventh Italian Conference on Computational Linguistics (CLiC-it 2025), Cagliari."
         abstract="Recent advances in Generative AI and Large Language Models (LLMs) have enabled the creation of highly realistic synthetic content, yet controlling model outputs remains a challenge. In this study, we explore the use of LLMs to generate high-quality synthetic data for Automatic Text Simplification (ATS), evaluating the ability of models fine-tuned on Italian to produce multiple simplified versions of the same original sentence that vary in readability and in their lexical and (morpho-)syntactic characteristics. The approach is tested across two domains, Wikipedia and Public Administration, allowing us to explore domain sensitivity. Additionally, we compare the linguistic phenomena observed in the generated data with those found in ATS resources previously created through manual or semi-automatic methods. Our results suggest that the best-performing LLM can generate linguistically diverse simplifications that align with known simplification patterns, offering a promising direction for building reliable ATS resources, including simplifications suited to varying levels of reader proficiency."
-        badge="Proceedings"
+        badge="Pre-Proceedings"
         year="2025"
-        bibtex={`Coming Soon`}
+        bibtex={`@inproceedings{
+                papucci2025generating,
+                title={Generating and Evaluating Multi-Level Text Simplification: A Case Study on Italian},
+                author={Papucci, Michele and Venturi, Giulia and Dell’Orletta, Felice},
+                booktitle={Proceedings of the 11th Italian Conference on Computational Linguistics CLiC-it 2025: Cagliari, Italy, September 24-26, 2025},
+                }`}
         bibtex_id = multi_level_semplification
         code_url = "https://github.com/michelepapucci/multilevel-text-simplification-italian"
         code_text = "Resources Available"
         tags={["Text Simplification", "Controllable Text Generation"]}
+        url = "https://clic2025.unica.it/wp-content/uploads/2025/09/81_main_long.pdf"
     />
     <HorizontalCardPublication
         title="Stress-testing Machine Generated Text Detection: Shifting Language Models Writing Style to Fool Detectors"
