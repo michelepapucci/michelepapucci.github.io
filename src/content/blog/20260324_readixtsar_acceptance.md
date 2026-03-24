@@ -3,7 +3,7 @@ title: "Paper Accepted at READIxTSAR@LREC2026"
 description: "My latest paper \"Lexical Conditioning of Model's Distribution through Uncertainty-gated Soft-Mixing of Probabilities\" has been accepted at READIxTSAR workshop at LREC2026 in Palma de Mallorca!"
 pubDate: "Mar 24 2026"
 heroImage: "/pictures/readixtsar.png"
-tags: ["Paper"]
+tags: ["Papers"]
 ---
 
 I am happy to announce that our latest paper "Lexical Conditioning of Model's Distribution through Uncertainty-gated Soft-Mixing of Probabilities" has been accepted at the [READIxTSAR workshop](https://readixtsar.github.io/) of Language and Resource Evaluation Conference of 2026 ([LREC2026](https://lrec2026.info/)). 
