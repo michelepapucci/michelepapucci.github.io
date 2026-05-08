@@ -10,6 +10,31 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         You can find my publication on <a class="underline" href="https://scholar.google.com/citations?user=X1_qLV4AAAAJ&hl=it">Google Scholar</a> or <a class="underline" href="https://www.semanticscholar.org/author/Michele-Papucci/3757153">Semantic Scholar</a>. However here's the complete publication list curated by me:
     </div>
     <HorizontalCardPublication
+        title="Controllable Sentence Simplification in Italian: Fine-Tuning Large Language Models on Automatically Generated Resources"
+        authors="Michele Papucci, Giulia Venturi, Felice Dell'Orletta"
+        published_at="Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026), Palma de Mallorca, Spain."
+        abstract="This paper presents a study on readability-controlled Sentence Simplification for Italian, addressing the scarcity of annotated resources for low-resource languages. We introduce IMPaCTS (Italian Multilevel Parallel Corpus for Text Simplification), the first fully automatically created corpus of 1,444,160 original–simple sentence pairs automatically annotated with readability levels and linguistic features. It was generated using an Italian LLM prompted in zero-shot to produce multiple simplifications per input sentence. Increasing portions of the resource are used to fine-tune mono- and multilingual open-weight LLMs, conditioning them to generate simplifications at a target readability level. Results from automatic and human evaluations show that fine-tuning on IMPaCTS improves performance both in terms of task completion and adherence to the targeted readability levels compared to few-shot baselines."
+        badge="Proceedings"
+        year="2026"
+        bibtex={`@inproceedings{papucci-etal-2026-controllable,
+                    title = {Controllable Sentence Simplification in Italian: Fine-Tuning Large Language Models on Automatically Generated Resources},
+                    author = {Papucci, Michele and Venturi, Giulia and Dell'Orletta, Felice},
+                    booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
+                    month = {May},
+                    year = {2026},
+                    pages = {7178--7191},
+                    address = {Palma, Mallorca, Spain},
+                    publisher = {European Language Resources Association (ELRA)},
+                    doi = {10.63317/5fgm358dfxt5},
+                    abstract = {This paper presents a study on readability-controlled Sentence Simplification for Italian, addressing the scarcity of annotated resources for low-resource languages. We introduce IMPaCTS (Italian Multilevel Parallel Corpus for Text Simplification), the first fully automatically created corpus of 1,444,160 original–simple sentence pairs automatically annotated with readability levels and linguistic features. It was generated using an Italian LLM prompted in zero-shot to produce multiple simplifications per input sentence. Increasing portions of the resource are used to fine-tune mono- and multilingual open-weight LLMs, conditioning them to generate simplifications at a target readability level. Results from automatic and human evaluations show that fine-tuning on IMPaCTS improves performance both in terms of task completion and adherence to the targeted readability levels compared to few-shot baselines.}
+                }`}
+        bibtex_id = papucci-etal-2026-controllable
+        code_url = "https://huggingface.co/datasets/mpapucci/impacts"
+        code_text = "Resources Available"
+        tags={["Text Simplification", "Controllable Text Generation"]}
+        url = "http://www.lrec-conf.org/proceedings/lrec2026/pdf/2026.lrec2026-1.570.pdf"
+    />
+    <HorizontalCardPublication
         title="Generating and Evaluating Multi-Level Text Simplification: A Case Study on Italian"
         authors="Michele Papucci, Giulia Venturi, Felice Dell'Orletta"
         published_at="Proceedings of the Eleventh Italian Conference on Computational Linguistics (CLiC-it 2025), Cagliari."
