@@ -35,6 +35,26 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         url = "http://www.lrec-conf.org/proceedings/lrec2026/pdf/2026.lrec2026-1.570.pdf"
     />
     <HorizontalCardPublication
+        title="Lexical Conditioning of Model’s Distribution through Uncertainty-gated Soft-Mixing of Probabilities"
+        published_at="Proceedings of the Joint Workshop on Readability and Text Simplification (READIxTSAR)@LREC2026, Palma de Mallorca, Spain."
+        abstract="We present Uncertainty-Gated Lexical Decoding (UGLD), a decoding-time framework for fine-grained lexical control in Large Language Models (LLMs) that explicitly addresses the trade-off between controllability and fluency. UGLD adaptively scales intervention through an entropy-based gating mechanism derived from the model’s predictive distribution, activating control when uncertainty is high and limiting interference when predictions are confident. The method supports both promotion toward and against predefined vocabularies. We evaluate UGLD in Italian on two open-weight LLMs (ANITA 8B and Qwen 3 4B) across paraphrasing and free-text generation settings, considering Simple Vocabulary Conditioning and Jargon Reduction scenarios. Automatic evaluation shows consistent improvements in lexical coverage over standard decoding strategies, while human evaluation confirms that fluency is preserved under controlled intervention."
+        badge="Proceedings"
+        year="2026"
+        bibtex={`@inproceedings{papucci2026lexical,
+                    title={Lexical Conditioning of Model’s Distribution through Uncertainty-gated Soft-Mixing of Probabilities},
+                    author={Papucci, Michele and Venturi, Giulia and Dell’Orletta, Felice},
+                    booktitle={Proceedings of the Joint Workshop on Readability and Text Simplification (READIxTSAR)@ LREC},
+                    pages={89--100},
+                    year={2026}
+                }`
+                }
+        bibtex_id = papucci2026lexical
+        code_url = "https://github.com/michelepapucci/ugld"
+        code_text = "Library Available"
+        tags={["Decoding", "Controllable Text Generation"]}
+        url = "http://www.italianlp.it/wp-content/uploads/2026/05/papuccietalreadixtsar2026.pdf"
+    />
+    <HorizontalCardPublication
         title="Generating and Evaluating Multi-Level Text Simplification: A Case Study on Italian"
         authors="Michele Papucci, Giulia Venturi, Felice Dell'Orletta"
         published_at="Proceedings of the Eleventh Italian Conference on Computational Linguistics (CLiC-it 2025), Cagliari."
