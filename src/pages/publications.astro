@@ -10,6 +10,28 @@ import HorizontalCardPublication from "@components/HorizontalCardPublication.ast
         You can find my publication on <a class="underline" href="https://scholar.google.com/citations?user=X1_qLV4AAAAJ&hl=it">Google Scholar</a> or <a class="underline" href="https://www.semanticscholar.org/author/Michele-Papucci/3757153">Semantic Scholar</a>. However here's the complete publication list curated by me:
     </div>
     <HorizontalCardPublication
+        title="What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics"
+        authors="Sofiia Nikolenko, Michele Papucci, Mina Rezaei, Shireen Kudukkil Manchingal"
+        published_at="Proceedings of European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2026), Naples, Italy."
+        abstract="Jailbreak attacks reveal a persistent weakness in aligned Large Language Models: carefully crafted prompts can elicit policy-violating responses despite safety training. While most defenses operate at the prompt or output level, it remains unclear how harmful intent is encoded within the model's internal representations. We investigate this question by analyzing token-level predictive entropy trajectories across layers of a frozen LLM using the logit lens. We find that static aggregate statistics of prompt-level entropy (e.g., mean, variance) carry little discriminative signal, whereas features capturing how entropy evolves across token positions, such as monotonic rank-based trend scores, are substantially more informative. Importantly, this signal is not uniform across model depth: it is concentrated in intermediate layers and degrades at the final layer, indicating that jailbreak-relevant structure is most pronounced in mid-network representations rather than at the output head. Across multiple models (Llama, Qwen, Gemma) and adversarial benchmarks, these entropy dynamics provide architecture-consistent separation without additional training. Together, our findings show that jailbreak behavior is reflected in structured intermediate uncertainty dynamics, clarifying both which entropy-derived features encode harmful intent and where in the network that signal is most pronounced."
+        badge="Proceedings"
+        year="2026"
+        bibtex={`@misc{nikolenko2026intermediatelayersknowdetecting,
+            title={What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics}, 
+            author={Sofiia Nikolenko and Michele Papucci and Mina Rezaei and Shireen Kudukkil Manchingal},
+            year={2026},
+            eprint={2606.25182},
+            archivePrefix={arXiv},
+            primaryClass={cs.CL},
+            url={https://arxiv.org/abs/2606.25182}, 
+        }`}
+        bibtex_id = nikolenko2026intermediatelayersknowdetecting
+        code_url = "https://github.com/ssophiee/entropy-jailbreak-detection"
+        code_text = "Code Available"
+        tags={["Interpretability", "Jailbreak Detection", "Uncertainty"]}
+        url = "https://arxiv.org/abs/2606.25182"
+    />
+    <HorizontalCardPublication
         title="Controllable Sentence Simplification in Italian: Fine-Tuning Large Language Models on Automatically Generated Resources"
         authors="Michele Papucci, Giulia Venturi, Felice Dell'Orletta"
         published_at="Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026), Palma de Mallorca, Spain."
